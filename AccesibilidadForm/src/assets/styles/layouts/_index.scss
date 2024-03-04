@@ -18,7 +18,57 @@
 }
 
 .main__tabs {
-    
+
+    padding: 1em;
+
+    .tabs__botonesTab {
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .botonesTab__pestana {
+
+            margin-right: 1em;
+            padding: 1em;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            
+        }
+        .botonesTab__pestana:hover {
+
+            background-color: $ubriWeb-corporate-hover;
+            
+            
+        }
+
+        .activo {
+            background-color: $ubriWeb-corporate;
+        }
+        .activo:hover {
+            background-color: $ubriWeb-corporate;
+        }
+
+
+    }
+
+    .tabs__contenedorTexto {
+        position: relative;
+        overflow: hidden;
+        min-height: 20vh;
+
+        .contenedorTexto__bloque {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .activo {
+            opacity: 1;
+        }
+
+    }
     
 
 }
