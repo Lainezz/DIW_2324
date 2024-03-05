@@ -72,3 +72,31 @@
     
 
 }
+
+.main__acordeon {
+
+
+    background-color: gray;
+    padding: 1em;
+
+    h2,p {
+        margin: 0;
+    }
+
+    .acordeon__region {
+
+        background-color: blueviolet;
+        padding: 1em;
+
+        .region__titular {
+
+            background-color: crimson;
+        }
+
+        .region__contenido {
+            background-color: darkorange;
+        }
+
+    }
+
+}
