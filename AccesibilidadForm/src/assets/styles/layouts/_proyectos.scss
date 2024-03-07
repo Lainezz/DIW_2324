@@ -20,6 +20,7 @@
 
       .div-img__img {
         height: 20vh;
+        cursor: pointer;
         transform: scale(1.4);
         transition: all 0.5s ease;
         //@include neo(1, 1em, 1em);
@@ -46,14 +47,24 @@
     flex-direction: column;
 
     opacity: 0;
+    transition: all 0.5s ease;
     
     .ligthbox-proyecto-selected__boton {
         margin: 0 0 1em;
+
+        height: 3rem;
+        width: 3.5rem;
+
+        cursor: pointer;
+
+        @include neo(2, .5em, .5em)
     }
 
     .ligthbox-proyecto-selected__div-img {
-      img {
+      .div-img__img--lightbox {
         height: 80vh;
+
+        
       }
     }
   }
@@ -61,5 +72,7 @@
   .activo {
     opacity: 1;
     z-index: 2;
+
+    transition: all 0.5s ease;
   }
 }
