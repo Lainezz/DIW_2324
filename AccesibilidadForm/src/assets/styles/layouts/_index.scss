@@ -75,27 +75,47 @@
 
 .main__acordeon {
 
-
-    background-color: gray;
+    background-color: cadetblue;
     padding: 1em;
+    @include neo(1, 1em, 1em);
 
-    h2,p {
+    h2, p {
         margin: 0;
     }
 
-    .acordeon__region {
+    .acordeon__divContenedor {
 
-        background-color: blueviolet;
-        padding: 1em;
+        background-color: chocolate;
+        margin: 0 0 1em;
+        @include neo(1, 1em, 1em);
 
-        .region__titular {
+        .divContenedor__titulo {
 
-            background-color: crimson;
+            background-color: chartreuse;
+            padding: 1rem;
+            cursor: pointer;
+
+            @include neo(1, 1em, 1em);
         }
 
-        .region__contenido {
-            background-color: darkorange;
+        .divContenedor__contenido {
+
+            background-color: blueviolet;
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+
+            transition: all .5s ease;
         }
+
+        .divContenedor__contenido--activo {
+            padding: 1rem;
+            min-height: 4rem;
+            overflow: auto;
+
+            transition: all .5s ease;
+        }
+
 
     }
 
