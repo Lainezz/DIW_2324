@@ -18,14 +18,12 @@
   .main__carrousel {
     position: relative;
     width: 90%;
-    max-width: 120em;
     padding: 2em;
 
     overflow: hidden;
 
     .carrousel__grande {
       width: 200%;
-      background-color: blueviolet;
       padding: 2em;
 
       display: flex;
@@ -38,7 +36,6 @@
 
       .grande__picture {
         width: calc(100% / 2 - 2em);
-        background-color: red;
         min-height: 10vh;
 
         .img {
@@ -49,7 +46,7 @@
 
     .carrousel__botones {
       position: absolute;
-      bottom: 20%;
+      bottom: 15%;
       width: 100%;
       //margin: 1em 0 0;
       //padding: 0.4em;
@@ -68,6 +65,11 @@
         border-radius: 50%;
 
         cursor: pointer;
+        transition: all .5s ease;
+      }
+
+      .botones__boton:hover {
+        background-color: $ubriWeb-corporate-hover;
       }
 
       .activo {
